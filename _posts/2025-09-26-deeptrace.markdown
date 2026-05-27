@@ -10,5 +10,3 @@ page: https://deeptracereward.github.io/
 arxiv: https://arxiv.org/abs/2509.22646
 sub_fields: "3D Vision and Embodied Perception"
 ---
-
-DeeptraceReward studies human-perceived fake traces in generated videos through fine-grained spatial and temporal annotations.
