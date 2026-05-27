@@ -82,73 +82,12 @@
               <h2>News</h2>
               <ul>
                 <li>
-                  <!-- <font color="red"> -->
-                  The website is updated occasionally. For the most recent
-                  updates, please refer to my
-                  <a
-                    href="https://scholar.google.com/citations?hl=en&user=ssSfKpAAAAAJ&view_op=list_works&sortby=pubdate">Google
-                    Scholar</a>. : )
-                  <!-- </font> -->
+                  [2026/02] PALM is accepted to CVPR 2026, my first robotics research paper. See you in Denver!
                 </li>
                 <li>
-                  [2025/06] HoST has been selected as a <font color="red">Best Systems Paper Finalist</font> at RSS 2025!
+                  [2025/09] SpatialReasoner is accepted to NeurIPS 2025. Thanks to my collaborators at Google,
+                  the University of Illinois Urbana-Champaign, and Shanghai Jiao Tong University.
                 </li>
-                <li>
-                  [2025/04] Check out <a href="https://infinite-mobility.github.io/">Infinite Mobility</a> that
-                  generates interactive objects and <a href="https://aether-world.github.io/">Aether</a>, our
-                  embodied 4D world model.
-                </li>
-                <li>
-                  [2025/04] [RSS 2025] Check out our manipulation works <a
-                    href="https://yangsizhe.github.io/robosplat/">RoboSplat</a> and <a
-                    href="https://yuyinyang3y.github.io/PPI/">PPI</a>.
-                </li>
-                <li>
-                  [2025/04] [RSS 2025] Check out our humanoid works <a href="https://hugwbc.github.io/">HugWBC</a>,
-                  <a href="https://taohuang13.github.io/humanoid-standingup.github.io/">HoST</a>,
-                  <a href="https://why618188.github.io/beamdojo/">BeamDojo</a>, and <a
-                    href="https://homietele.github.io">Homie</a>.
-                </li>
-                <!-- <li>
-                  [2025/02] We find some interesting observations on Sim2Real
-                  in manipulation, check out
-                  <a href="https://xshenhan.github.io/Re3Sim/">Re3Sim</a>
-                  and stay tuned.
-                </li> -->
-                <li>
-                  [2025/02]
-                  <a href="https://nimolty.github.io/Seer/">Seer</a>, a
-                  scalable learner for robotic manipulation, is accepted at
-                  ICLR 2025 as an Oral Presentation.
-                </li>
-                <li>
-                  [2024/11] We present
-                  <a href="https://junfeng-long.github.io/PIM/">Perceptive Internal Model (PIM)</a>
-                  for Humanoid Locomotion.
-                </li>
-                <li>
-                  [2024/09] PointLLM receives
-                  <font color="red">Best Paper Candidate Award</font> at ECCV
-                  2024!
-                </li>
-                <li>
-                  [2024/07] We present GRUtopia, a simulation platform with
-                  versatile scenes for Embodied AI.
-                </li>
-                <li>
-                  [2024/01] We present PointLLM & EmbodiedScan for Perception,
-                  UniHSI for Interaction, and HIMLoco for Control.
-                </li>
-                <li>
-                  [2023/06] OC-SORT is accepted to CVPR 2023. It is recognized
-                  as one of the Most Influential CVPR Papers.
-                </li>
-                <!-- <li>
-                  [2022/10] DfM and DenseSiam are accepted to ECCV 2022. DfM is selected as Oral Presentation.
-                </li>
-                <li>
-                  [2022/06] Video K-Net is accepted to CVPR 2022 as Oral Presentation.
-                </li> -->
               </ul>
             </td>
           </tr>
@@ -173,7 +112,7 @@
                 contribution.
               </p> -->
               <!-- Value: init categories_list with a long string -->
-              {% assign categories_list = "All Selected Publications,Simulation/Hardware Systems for Embodied AI,Humanoids and Motion Intelligence,Manipulation and Navigation Intelligence,AIGC for Embodied AI,3D Vision and Embodied Perception" | split: "," %}
+              {% assign categories_list = "All Selected Publications,3D Vision and Embodied Perception,Robust Robot Learning,Reinforcement Learning" | split: "," %}
 
               <table style="
                     width: 100%;
@@ -188,38 +127,25 @@
                   </td>
                   <td style="text-align: left">
                     <a href="#" onclick="event.preventDefault();showTable('{{categories_list[1]}}')"
-                      class="nav-link">Simulation/Hardware Systems for Embodied AI</a>
+                      class="nav-link">3D Vision and Embodied Perception</a>
                   </td>
                 </tr>
                 <tr>
                   <td style="text-align: left">
                     <a href="#" onclick="event.preventDefault();showTable('{{categories_list[2]}}')"
-                      class="nav-link">Humanoids and Motion Intelligence</a>
+                      class="nav-link">Robust Robot Learning</a>
                   </td>
                   <td style="text-align: left">
                     <a href="#" onclick="event.preventDefault();showTable('{{categories_list[3]}}')"
-                      class="nav-link">Manipulation and Navigation Intelligence</a>
+                      class="nav-link">Reinforcement Learning</a>
                   </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">
-                    <a href="#" onclick="event.preventDefault();showTable('{{categories_list[4]}}')" class="nav-link">AIGC for Embodied AI</a>
-                  </td>
-                  <td style="text-align: left">
-                    <a href="#" onclick="event.preventDefault();showTable('{{categories_list[5]}}')" class="nav-link">3D
-                      Vision and Embodied Perception</a>
-                  </td>
-                  <!-- <td style="text-align: left">
-                    <a href="#" onclick="event.preventDefault();showTable('{{categories_list[5]}}')"
-                      class="nav-link">Others</a>
-                  </td> -->
                 </tr>
               </table>
             </td>
           </tr>
         </table>
         <br />
-        <!-- Layout: Create 5 tables, each representing a category from the list-->
+        <!-- Layout: Create a table for each publication category. -->
         <div id="table-container">
 
           {% for category in categories_list %}
