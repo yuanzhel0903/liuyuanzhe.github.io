@@ -82,11 +82,13 @@
                   your support!
                 </li>
                 <li>
-                  [2026/02] PALM is accepted to CVPR 2026, my first robotics research paper. See you in Denver!
+                  [2026/02] <a href="https://plan-lab.github.io/projects/palm/">PALM</a> is accepted to
+                  <a href="https://cvpr.thecvf.com/">CVPR 2026</a>, my first robotics research paper. See you in Denver!
                 </li>
                 <li>
-                  [2025/09] SpatialReasoner is accepted to NeurIPS 2025. Thanks to my collaborators at Google,
-                  the University of Illinois Urbana-Champaign, and Shanghai Jiao Tong University.
+                  [2025/09] <a href="https://plan-lab.github.io/projects/spatialreasoner/">SpatialReasoner</a> is accepted to
+                  <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a>. Thanks to my collaborators at Google, the
+                  University of Illinois Urbana-Champaign, and Shanghai Jiao Tong University.
                 </li>
               </ul>
             </td>
@@ -172,8 +174,11 @@
                 <br />
                 {{post.authors}}
                 <br />
-                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} {% if
-                post.highlight %}
+                {% if post.venue == "CVPR" or post.venue == "NeurIPS" %}
+                <font color="red"><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</font>
+                {% else %}
+                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                {% endif %} {% if post.highlight %}
                 <br />
                 <font style="color: red">{{post.highlight}}</font>
                 {% endif %}
