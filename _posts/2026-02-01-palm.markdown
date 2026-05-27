@@ -1,0 +1,14 @@
+---
+layout: post
+title: "PALM: Progress-Aware Policy Learning via Affordance Reasoning for Long-Horizon Robotic Manipulation"
+date: 2026-02-01 00:00:00 +00:00
+image: pubs/2026.PALM/palm.png
+categories: research
+authors: "<strong>Yuanzhe Liu</strong>, Jingyuan Zhu, Yuchen Mo, Gen Li, Xu Cao, Jin Jin, Yifan Shen, Zhengyuan Li, Tianjiao Yu, Wenzhen Yuan, Fangqiang Ding, Ismini Lourentzou"
+venue: "CVPR"
+page: https://plan-lab.github.io/projects/palm/
+arxiv: https://arxiv.org/abs/2601.07060
+sub_fields: "Robust Robot Learning"
+---
+
+PALM couples structured affordance reasoning with continuous subtask progress estimation for long-horizon robotic manipulation.
