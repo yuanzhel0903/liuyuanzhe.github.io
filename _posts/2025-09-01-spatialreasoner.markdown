@@ -10,5 +10,3 @@ page: https://plan-lab.github.io/projects/spatialreasoner/
 arxiv: https://arxiv.org/abs/2506.21656
 sub_fields: "Reinforcement Learning"
 ---
-
-SpatialReasoner improves fine-grained spatial reasoning in vision-language models with preference optimization.
