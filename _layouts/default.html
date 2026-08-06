@@ -174,7 +174,7 @@
                 <br />
                 {{post.authors}}
                 <br />
-                {% if post.venue == "CVPR" or post.venue == "NeurIPS" %}
+                {% if post.venue == "CVPR" or post.venue == "NeurIPS" or post.venue == "COLM" or post.venue == "ECCV" %}
                 <font color="red"><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</font>
                 {% else %}
                 <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
